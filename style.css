@@ -6,6 +6,10 @@ body {
     font-family: Work sans, sans-serif;
     color: #333;
 
+    /*@media (max-width: 600px) {
+
+    }*/
+
     ul {
         list-style: none;
         display: flex;
@@ -20,108 +24,120 @@ body {
         }
     }
 
-        h2 {
+    h2 {
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 40px;
+    }
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/lyon.webp");
+        padding: 200px 0;
+        color: #fff;
+        background-size: cover;
+
+        h1 {
             font-family: 'Amatic SC', sans-serif;
-            font-size: 40px;
+            font-size: 50px;
+            margin: 0;
         }
 
-        header {
-            background-image: url(images/lyon.webp);
-            height: 500px;
-            color: #fff;
-            background-size: cover;
+    }
 
-            h1 {
-                font-family: 'Amatic SC', sans-serif;
-                font-size: 50px;
-                margin: 0;
-            }
+    main {
+        section#definition {
+            display: flex;
 
-        }
-
-        main {
-            section#definition {
-                display: flex;
-
-                div.img-definition {
-                    padding: 20px;
-
-                    img {
-                        width: 400px;
-                        height: 200px;
-                        object-fit: cover;
-                    }
-                }
-
-                div.txt-definition {
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    width: 70%;
-                    padding: 20px;
-
-
-                    p {
-                        text-align: left;
-                    }
-                }
-
-            }
-
-            section#plats {
-                display: flex;
-
-                h3 {
-                    font-size: 26px;
-                }
+            div.img-definition {
+                padding: 20px;
 
                 img {
-                    width: 250px;
-                    height: 300px;
+                    width: 400px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+            }
+
+            div.txt-definition {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 70%;
+                padding: 20px;
+
+
+                p {
+                    text-align: left;
+                }
+            }
+
+        }
+
+        section#plats {
+            display: flex;
+
+            h3 {
+                font-size: 26px;
+            }
+
+            img {
+                width: 250px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            article {
+                width: 500px;
+                border: solid 1px #333;
+                margin: 20px;
+            }
+        }
+
+        section#restaurants {
+            display: flex;
+
+            .article-rest-indiv {
+                margin: 10px;
+
+                img {
+                    width: 400px;
+                    height: 400px;
                     object-fit: cover;
                 }
 
-                .article-plat-indiv {
-                    width: 500px;
-                    border: solid 1px #333;
-                    margin: 20px;
-                }
+
             }
+        }
 
-            section#restaurants {
-                display: flex;
+        section#contact-banner {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
 
-                .article-rest-indiv {
-                    margin: 10px;
-
-                    img {
-                        width: 400px;
-                        height: 400px;
-                        object-fit: cover;
-                    }
-
-
-                }
-            }
-
-            section#contact-banner {
-                background-color: #333;
-                color: #fff;
-                display: flex;
-                justify-content: space-around;
-
-            a{
+            a {
                 text-decoration: none;
             }
-            #separation-res-soc{
-                border-right: 2px solid #fff;
-            }
-            }
-        }
 
-        footer {
-            background-color: black;
-            color: #fff;
-            padding: 10px;
+            .suivez-nous {
+                ul {
+                    li {
+                        margin: 0;
+                        &:first-of-type {
+                            padding-right: 5px;
+                            border-right: 2px solid #fff;
+                        }
+                        &:last-of-type {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
+
+    footer {
+        background-color: black;
+        color: #fff;
+        padding: 10px;
+    }
+}
